@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fakre alam | BCA Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--light);
+        }
+
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: #e2e8f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f1f5f9;
+            margin-top: 3rem;
+        }
+
+        .social-links a {
+            color: var(--dark);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fakre alam</h1>
+    <p>BCA Student at UPES | Systems & Backend Developer</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a BCA student at UPES with a deep interest in how software interacts with hardware. 
+            I specialize in <strong>C Programming</strong>, <strong>Linux Shell Scripting</strong>, and <strong>SQL</strong>. 
+            Beyond the terminal, I'm an active volleyball player, which fuels my competitive spirit and 
+            focus on teamwork.
+        </p>
+    </section>
+
+    <section>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-list">
+            <span class="skill-item">C Programming</span>
+            <span class="skill-item">Python</span>
+            <span class="skill-item">Bash/Shell Scripting</span>
+            <span class="skill-item">Oracle SQL</span>
+            <span class="skill-item">Linux (Ubuntu/RHEL)</span>
+            <span class="skill-item">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Key Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Rule-Based Expert System</h3>
+                <p>A decision-making system developed using Shell Scripting logic to solve real-world problems.</p>
+                <span class="tag">Bash</span> <span class="tag">Linux</span>
+            </div>
+            <div class="card">
+                <h3>Shared Library Implementation</h3>
+                <p>Created and integrated modular C libraries to optimize code reuse and system memory.</p>
+                <span class="tag">C</span> <span class="tag">Systems</span>
+            </div>
+            <div class="card">
+                <h3>Database Constraint Analysis</h3>
+                <p>Designed a complex SQL schema using sub-queries and data integrity constraints.</p>
+                <span class="tag">SQL</span> <span class="tag">Oracle</span>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 fakre alam | Built with HTML & CSS</p>
+    <div class="social-links">
+        <a href="https://github.com/fiere9"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/fakre-alam-85762a377"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
